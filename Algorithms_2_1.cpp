@@ -15,7 +15,7 @@ void fibonacci(int lastNumber = 0)
         return;
 
     std::cout << first << std::endl;
-    long long next = first + second;
+    static long long next = first + second;
     first = second;
     second = next;
 
